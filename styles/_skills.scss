@@ -1,0 +1,42 @@
+.skills {
+    // border: 5px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background: $red-orange;
+    h2 {
+        -webkit-text-stroke-color: $dark-red;
+    }
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    // width: 70%;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 15%; // this will put 6 in a row
+
+    label {
+        color: white;
+        font-size: .6rem;
+        text-transform: uppercase;
+    }
+}
+
+.skill-logo {
+    font-size: 3rem;
+    color: white;
+    padding: 20px;
+}
+

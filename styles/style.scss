@@ -1,0 +1,103 @@
+@import "setup";
+@import "typography";
+
+html {
+    font-size: 125%;
+    height: 100%;
+  }
+
+html, body, a {
+    cursor: url(../assets/mushroom-cursor.png), auto;
+}
+ 
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    height: 100vh;
+    // border: 5px solid red;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    // position: relative;
+    // border: 2px solid blue;
+}
+
+.site-nav-ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    // border: 2px solid red;
+}
+
+.site-nav-li {
+    padding-left: 40px;
+    // border: 2px solid green;
+}
+
+.nav-logo {
+    // border: 2px solid red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // width: 160px;
+    // height: 100px;
+}
+
+.nav-image {
+    display: flex;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 65px;
+    // height: 45px;
+    // background: white;
+    // border: 2px solid $dark-red;
+    // padding: 5px;
+    // width: 100%;
+    width: 165px;
+    height: 100px;
+
+
+}
+
+span {
+    border-bottom: 5px solid $dark-red;
+}
+
+@import "hero";
+@import "skills";
+@import "projects";
+@import "contact";
+
+footer {
+    padding: 10px 0; 
+    p {
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 5px 0;
+
+    text-transform: uppercase;
+    color: $red-orange;
+    }
+    p:nth-child(3){
+        font-size: .6rem;
+    }
+    p:nth-child(1){
+        font-size: .6rem;
+        padding-bottom: 5px;
+    }
+    a {
+        font-size: .6rem;
+        padding-left: 5px;
+        border-bottom: 2px solid transparent;
+    }
+}

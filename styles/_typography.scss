@@ -1,0 +1,59 @@
+// FONT STYLES:
+// font-family: 'Poppins', sans-serif; font-weight: 400 OR 700;
+$font: 'Poppins', sans-serif;
+
+// COLORS:
+$light-pink: #FBCCE8;
+$red-orange: #EF3F37;
+$dark-red: #8E251A;
+
+body, a{
+    background: $light-pink;
+    color: $red-orange;
+    font-family: $font;
+    font-weight: 400;
+    font-size: 1rem;
+    // cursor: url(assets/Duck.png);
+
+}
+
+h1, h2 {
+    font-family: $font;
+    font-weight: 700;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: $font;
+    font-weight: 700;
+    font-size: 3rem;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: $red-orange;
+}
+
+.hero h2 {
+    font-family: $font;
+    font-weight: 700;
+    font-size: 3rem;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: $red-orange;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+a:hover {
+    border-bottom: 2px solid $dark-red;
+}
