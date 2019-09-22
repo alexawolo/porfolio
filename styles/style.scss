@@ -6,8 +6,12 @@ html {
     height: 100%;
   }
 
-html, body, a {
+html, body, label {
     cursor: url(../assets/mushroom-cursor.png), auto;
+}
+
+input, a, textarea, input[type="submit"] {
+    cursor: url(../assets/hand.png), pointer;
 }
  
 .wrapper {
@@ -89,6 +93,12 @@ footer {
     color: $red-orange;
     }
     p:nth-child(3){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 2px solid blue;
+
+
         font-size: .6rem;
     }
     p:nth-child(1){

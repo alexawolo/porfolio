@@ -25,7 +25,9 @@
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
-    border: 2px solid yellow;
+    // border: 2px solid yellow;
+    // margin: 10px 0;
+    padding: 20px 0;
 }
 
 form {
@@ -33,13 +35,82 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid greenyellow;
+    width: 60%;
+    border: none;
+    padding: 20px;
+    background: $light-pink;
+    border: 5px solid $dark-red;
+    box-shadow: 10px 10px white;
+}
+
+label {
+    color: $red-orange;
+    padding: 10px 0 10px 10px;
+    text-transform: uppercase;
+    
+    // border: 2px solid blue;
+}
+
+.name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    width: 100%;
+    height: 35px;
+    padding: 10px 0 10px 10px;
+    border: 2px solid $dark-red;
+    font-family: $font;
+    color: $dark-red;
+
+}
+
+.submitButton {
+    // width: 150px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    // height: 60px;
+    padding: 10px 0 0 0;
+    margin-top: 15px;
+    background: none;
+    font-size: 1.2rem;
+    font-family: $font;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $red-orange;
+}
+.submitButton:hover {
+    border-bottom: 2px solid $dark-red;
+}
+
+.message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 2px solid $dark-red;
+    font-family: $font;
+    padding-left: 10px;
+    color: $dark-red;
 }
 
 .img-content-container {
+    // border: 2px solid blue;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -47,20 +118,21 @@ form {
     border: 5px solid $dark-red;
     background: white;
     box-shadow: -10px 10px $light-pink;
+    width: 250px;
+    height: 70%;
+    margin-bottom: 20px;
 
-    width: 300px;
-    height: 90%;
     img {
         max-width: 100%;
+        padding: 20px;
     }
 }
-
-
 
 .socials-nav {
     display: flex;
     justify-content: center;
-    border: 2px solid greenyellow;
+    width: 250px;
+    // border: 2px solid greenyellow;
 }
 .socials-nav-ul {
     display: flex;
@@ -68,6 +140,24 @@ form {
     align-items: center;
     width: 100%;
 }
+
+.socials-nav a {
+    border-bottom: none;
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid transparent;
+}
+
+.socials-nav a:hover {
+    border: 2px solid $dark-red;
+    border-radius: 10px;
+}
+
+.github-icon:hover:first-child {
+    border: 2px solid $dark-red;
+    border-radius: 50%;
+}
+
 
 .socials-content {
     display: flex;
